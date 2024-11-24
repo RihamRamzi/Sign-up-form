@@ -67,18 +67,18 @@ img {
   display: flex;
   flex-direction: column;
 }
-.formDescription,
-.formCon,
-.btnCon {
+form {
+  height: 100%;
   flex: 1;
-  padding-left: 50px;
 }
+
 .formDescription {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  padding-left: 50px;
   padding-right: 200px;
-  flex: 1.2;
+  flex: 0.6;
 }
 
 .formDescription p {
@@ -94,6 +94,8 @@ img {
   flex-wrap: wrap;
   height: 80%;
   width: 80%;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
 .inputCon > div {
   width: 40%;
@@ -102,9 +104,7 @@ img {
   justify-content: center;
   margin-right: 50px;
 }
-form {
-  height: 100%;
-}
+
 input {
   border: 1px solid #e5e7eb;
   border-radius: 5px;
@@ -112,8 +112,17 @@ input {
   padding: 10px;
   outline: none;
 }
+span {
+  font-size: 10px;
+  color: hsla(0, 100%, 50%, 0.76);
+  visibility: hidden;
+}
 input:user-invalid {
   border: 1px solid hsla(0, 100%, 50%, 0.397);
+}
+input:invalid,
+span {
+  visibility: visible;
 }
 input:focus {
   border: 1px solid hsla(240, 99%, 49%, 0.521);
@@ -128,7 +137,7 @@ label {
 h2 {
   color: hsl(0, 1%, 44%);
 }
-span {
-  font-size: 10px;
-  color: hsla(0, 100%, 50%, 0.76);
+
+form > div {
+  padding-left: 50px;
 }
