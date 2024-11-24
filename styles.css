@@ -110,10 +110,16 @@ input {
   border-radius: 5px;
   height: 40%;
   padding: 10px;
+  outline: none;
 }
-input:invalid {
-  border: red;
+input:user-invalid {
+  border: 1px solid hsla(0, 100%, 50%, 0.397);
 }
+input:focus {
+  border: 1px solid hsla(240, 99%, 49%, 0.521);
+  box-shadow: 2px 3px 7px hsla(0, 0%, 0%, 0.219);
+}
+
 label {
   font-weight: 500;
   color: hsl(0, 1%, 44%);
@@ -121,4 +127,8 @@ label {
 }
 h2 {
   color: hsl(0, 1%, 44%);
+}
+span {
+  font-size: 10px;
+  color: hsla(0, 100%, 50%, 0.76);
 }
