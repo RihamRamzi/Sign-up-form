@@ -120,7 +120,7 @@ span {
 input:user-invalid {
   border: 1px solid hsla(0, 100%, 50%, 0.397);
 }
-input:invalid,
+input:user-invalid,
 span {
   visibility: visible;
 }
@@ -135,9 +135,27 @@ label {
   font-size: 14px;
 }
 h2 {
-  color: hsl(0, 1%, 44%);
+  color: hsl(0, 1%, 22%);
+  margin-bottom: 20px;
 }
 
 form > div {
   padding-left: 50px;
+}
+
+.btnCon button {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #596d48;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+a {
+  color: #596d48;
+  font-weight: 700;
+  text-decoration: none;
 }
